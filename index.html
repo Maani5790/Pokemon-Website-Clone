@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="pokemon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="mainContainer">
+      <div class="navigationTop">
+        <div class="pokemon-gus-container">
+          <div class="gus-outer-container">
+            <div class="gus-inner-container" style="max-width: 913px">
+              <ul class="gus gus-with-flyout">
+                <li class="gus-button pcom gus-active">
+                  <a
+                    href="https://www.pokemon.com/us/"
+                    class="gus-"
+                    target="_self"
+                  >
+                    <img
+                      src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemon-79x45.png"
+                      alt="site_slug"
+                      class="gus-bounce"
+                    />
+                  </a>
+                </li>
+                <li class="gus-button pcom">
+                  <a
+                    class="gus-pokemon-center-link"
+                    target="_blank"
+                    rel="https://www.pokemoncenter.com/?utm_source=p&amp;utm_medium=referral&amp;utm_term=GUS"
+                    tabindex="0"
+                  >
+                    <img
+                      src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemoncenter-79x45.png"
+                      alt="site_slug"
+                      class="gus-bounce"
+                    />
+                  </a>
+                </li>
+                <li class="gus-button pcom">
+                  <a
+                    href="https://corporate.pokemon.com/en-us/"
+                    class="gus-"
+                    target="_self"
+                  >
+                    <img
+                      src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/corporate-en.png"
+                      alt="site_slug"
+                      class="gus-bounce"
+                    />
+                  </a>
+                </li>
+                <span class="gus-promotion-wrapper">
+                  <li class="gus-promotion">
+                    <a
+                      href="https://tcg.pokemon.com/en-us/"
+                      class="gus-"
+                      target="_self"
+                    >
+                      <img
+                        src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/swsh11-gus-175-en.jpg"
+                      />
+                    </a>
+                  </li>
+                  <li class="gus-promotion">
+                    <a
+                      href="https://scarletviolet.pokemon.com/en-us/"
+                      class="gus-"
+                      target="_self"
+                    >
+                      <img
+                        src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/scarlet-violet-175x50-en.jpg"
+                      />
+                    </a>
+                  </li>
+                  <li class="gus-promotion">
+                    <a
+                      href="https://unite.pokemon.com/en-us/"
+                      class="gus-"
+                      target="_self"
+                    >
+                      <img
+                        src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/unite-176x50.jpg"
+                      />
+                    </a>
+                  </li>
+                  <li class="gus-promotion">
+                    <a
+                      href="https://tcg.pokemon.com/en-us/expansions/tcg-go/"
+                      class="gus-"
+                      target="_self"
+                    >
+                      <img
+                        src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/pgo-gus-175-en.jpg"
+                      />
+                    </a>
+                  </li>
+                  <li class="gus-promotion">
+                    <a
+                      href="https://legends.pokemon.com/en-us/"
+                      class="gus-"
+                      target="_self"
+                    >
+                      <img
+                        src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/legends-arceus-176x50-us.jpg"
+                      />
+                    </a>
+                  </li>
+                  <li class="gus-promotion">
+                    <a
+                      href="https://www.pokemon.com/us/app/"
+                      class="gus-"
+                      target="_self"
+                    >
+                      <img
+                        src="https://assets.pokemon.com/assets/cms2/img/misc/gus/promotions/promo-app-gallery-176x50.jpg"
+                      />
+                    </a>
+                  </li>
+                </span>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="main nav-follow">
+          <div class="blocker" style="opacity: 0"></div>
+
+          <div class="content-wrapper">
+            <div class="nav-bar">
+              <a href="#" class="nav-toggle"
+                ><span class="icon icon_hamburger"></span
+              ></a>
+
+              <ul class="dashboard-open visible-mobile not-signed-in">
+                <li class="visible-signed-in">
+                  <a href="/us/pokemon-trainer-club/login">
+                    <div class="avatar-icon-wrapper">
+                      <img
+                        class="avatar-icon avatar-icon-mobile"
+                        src="https://assets.pokemon.com/static2/_ui/img/chrome/profile-navigation/profile-nav-avatar.png"
+                        alt="View Profile"
+                      />
+                    </div>
+                  </a>
+                </li>
+
+                <li class="visible-not-signed-in">
+                  <a href="/us/pokemon-trainer-club/login">
+                    <div class="avatar-icon-wrapper">
+                      <img
+                        class="avatar-icon avatar-icon-mobile"
+                        src="https://assets.pokemon.com/static2/_ui/img/chrome/profile-navigation/profile-nav-signup.png"
+                        alt="Log In / Sign Up"
+                      />
+                    </div>
+                    <div
+                      class="sign-in-text-wrapper sign-in-text-wrapper-mobile"
+                    >
+                      Log In
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <ul
+              data-analytics-label="primary-nav"
+              style="height: 0px; overflow: hidden"
+            >
+              <li class="home">
+                <a
+                  href="/us/"
+                  target="_self"
+                  data-content-id=""
+                  data-content-type="Sidebar"
+                  data-content-variation="sidebarLeft"
+                  data-content-location=""
+                  data-content-category=""
+                  data-content-download=""
+                  class="active"
+                >
+                  <span class="fill"></span>
+
+                  <span class="icon icon_home"> </span>
+
+                  <span class="title title_home">Home</span>
+                </a>
+              </li>
+
+              <li class="explore">
+                <a
+                  href="/us/pokedex/"
+                  target="_self"
+                  data-content-id=""
+                  data-content-type="Sidebar"
+                  data-content-variation="sidebarLeft"
+                  data-content-location=""
+                  data-content-category=""
+                  data-content-download=""
+                >
+                  <span class="fill"></span>
+
+                  <span class="icon icon_pokeball"> </span>
+
+                  <span class="title title_pokeball">Pokédex</span>
+                </a>
+              </li>
+
+              <li class="watch">
+                <a
+                  href="/us/pokemon-video-games/"
+                  target="_self"
+                  data-content-id=""
+                  data-content-type="Sidebar"
+                  data-content-variation="sidebarLeft"
+                  data-content-location=""
+                  data-content-category=""
+                  data-content-download=""
+                >
+                  <span class="fill"></span>
+
+                  <span class="icon icon_joystick"> </span>
+
+                  <span class="title title_joystick"
+                    >Video Games &amp; Apps</span
+                  >
+                </a>
+              </li>
+
+              <li class="play">
+                <a
+                  href="/us/pokemon-tcg/"
+                  target="_self"
+                  data-content-id=""
+                  data-content-type="Sidebar"
+                  data-content-variation="sidebarLeft"
+                  data-content-location=""
+                  data-content-category=""
+                  data-content-download=""
+                >
+                  <span class="fill"></span>
+
+                  <span class="icon icon_cards"> </span>
+
+                  <span class="title title_cards">Trading Card Game</span>
+                </a>
+
+                <a href="#" class="subnav-toggle"><span class="icon"></span></a>
+
+                <ul
+                  class="subnav secondary"
+                  style="display: block; position: absolute; overflow: hidden"
+                >
+                  <li
+                    class="subnav-title"
+                    data-content-id=""
+                    data-content-type="Sidebar"
+                    data-content-variation="sidebarLeft"
+                    data-content-location=""
+                    data-content-category=""
+                    data-content-download=""
+                  >
+                    <a href="#" class="subnav-toggle"
+                      ><span class="icon"></span
+                    ></a>
+                    <a href="#"><span class="title">Trading Card Game</span></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/us/pokemon-tcg/play-online/"
+                      data-content-id=""
+                      data-content-type="Sidebar"
+                      data-content-variation="sidebarLeft"
+                      data-content-location=""
+                      data-content-category=""
+                      data-content-download=""
+                      target="_self"
+                      >Pokémon TCG Online</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/us/pokemon-tcg/play-online/leaderboards/"
+                      data-content-id=""
+                      data-content-type="Sidebar"
+                      data-content-variation="sidebarLeft"
+                      data-content-location=""
+                      data-content-category=""
+                      data-content-download=""
+                      target="_self"
+                      >TCG Online Leaderboards</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="attend">
+                <a
+                  href="/us/pokemon-episodes/"
+                  target="_self"
+                  data-content-id=""
+                  data-content-type="Sidebar"
+                  data-content-variation="sidebarLeft"
+                  data-content-location=""
+                  data-content-category=""
+                  data-content-download=""
+                >
+                  <span class="fill"></span>
+
+                  <span class="icon icon_pokemontv"> </span>
+
+                  <span class="title title_pokemontv">Pokémon TV</span>
+                </a>
+              </li>
+
+              <li class="trade">
+                <a
+                  href="/us/play-pokemon/"
+                  target="_self"
+                  data-content-id=""
+                  data-content-type="Sidebar"
+                  data-content-variation="sidebarLeft"
+                  data-content-location=""
+                  data-content-category=""
+                  data-content-download=""
+                >
+                  <span class="fill"></span>
+
+                  <span class="icon icon_event"> </span>
+
+                  <span class="title title_event">Play! Pokémon Events</span>
+                </a>
+
+                <a href="#" class="subnav-toggle"><span class="icon"></span></a>
+
+                <ul
+                  class="subnav secondary"
+                  style="display: block; position: absolute; overflow: hidden"
+                >
+                  <li
+                    class="subnav-title"
+                    data-content-id=""
+                    data-content-type="Sidebar"
+                    data-content-variation="sidebarLeft"
+                    data-content-location=""
+                    data-content-category=""
+                    data-content-download=""
+                  >
+                    <a href="#" class="subnav-toggle"
+                      ><span class="icon"></span
+                    ></a>
+                    <a href="#"
+                      ><span class="title">Play! Pokémon Events</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="/us/play-pokemon/"
+                      data-content-id=""
+                      data-content-type="Sidebar"
+                      data-content-variation="sidebarLeft"
+                      data-content-location=""
+                      data-content-category=""
+                      data-content-download=""
+                      target="_self"
+                      >Play! Pokémon Events</a
+                    >
+
+                    <a href="#" class="subnav-toggle"
+                      ><span class="icon"></span
+                    ></a>
+
+                    <ul
+                      class="subnav tertiary"
+                      style="
+                        display: block;
+                        position: absolute;
+                        overflow: hidden;
+                      "
+                    >
+                      <li
+                        class="subnav-title"
+                        data-content-id=""
+                        data-content-type="Sidebar"
+                        data-content-variation="sidebarLeft"
+                        data-content-location=""
+                        data-content-category=""
+                        data-content-download=""
+                      >
+                        <a href="#" class="subnav-toggle"
+                          ><span class="icon"></span
+                        ></a>
+                        <a href="#"
+                          ><span class="title">Play! Pokémon Events</span></a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="/us/play-pokemon/pokemon-events/"
+                          data-content-id=""
+                          data-content-type="Sidebar"
+                          data-content-variation="sidebarLeft"
+                          data-content-location=""
+                          data-content-category=""
+                          data-content-download=""
+                          target="_self"
+                          >Play! Pokémon Events</a
+                        >
+
+                        <a href="#" class="subnav-toggle"
+                          ><span class="icon"></span
+                        ></a>
+
+                        <ul
+                          class="subnav tertiary"
+                          style="
+                            display: block;
+                            position: absolute;
+                            overflow: hidden;
+                          "
+                        >
+                          <li
+                            class="subnav-title"
+                            data-content-id=""
+                            data-content-type="Sidebar"
+                            data-content-variation="sidebarLeft"
+                            data-content-location=""
+                            data-content-category=""
+                            data-content-download=""
+                          >
+                            <a href="#" class="subnav-toggle"
+                              ><span class="icon"></span
+                            ></a>
+                            <a href="#"
+                              ><span class="title"
+                                >Play! Pokémon Events</span
+                              ></a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="/us/play-pokemon/pokemon-events/find-an-event/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Event Locator</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/pokemon-events/play-in-a-league/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Pokémon League</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/pokemon-events/pokemon-tournaments/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Pokémon Championship Series</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/pokemon-events/pokemon-tournaments/earn-championship-points/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Championship Points</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/leaderboards/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Championship Rating and Rankings</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/pokemon-events/pre-release-tournaments/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Prerelease Tournaments</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="/us/play-pokemon/about/"
+                          data-content-id=""
+                          data-content-type="Sidebar"
+                          data-content-variation="sidebarLeft"
+                          data-content-location=""
+                          data-content-category=""
+                          data-content-download=""
+                          target="_self"
+                          >About Play! Pokémon</a
+                        >
+
+                        <a href="#" class="subnav-toggle"
+                          ><span class="icon"></span
+                        ></a>
+
+                        <ul
+                          class="subnav tertiary"
+                          style="
+                            display: block;
+                            position: absolute;
+                            overflow: hidden;
+                          "
+                        >
+                          <li
+                            class="subnav-title"
+                            data-content-id=""
+                            data-content-type="Sidebar"
+                            data-content-variation="sidebarLeft"
+                            data-content-location=""
+                            data-content-category=""
+                            data-content-download=""
+                          >
+                            <a href="#" class="subnav-toggle"
+                              ><span class="icon"></span
+                            ></a>
+                            <a href="#"
+                              ><span class="title">About Play! Pokémon</span></a
+                            >
+                          </li>
+
+                          <li>
+                            <a
+                              href="/us/play-pokemon/about/play-points/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Play! Points</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/about/tournaments-rules-and-resources/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Rules &amp; Resources</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/about/tournaments-glossary/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Play! Pokémon Glossary</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/about/video-game-glossary/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Video Game Glossary</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/us/play-pokemon/about/parents-guide/"
+                              data-content-id=""
+                              data-content-type="Sidebar"
+                              data-content-variation="sidebarLeft"
+                              data-content-location=""
+                              data-content-category=""
+                              data-content-download=""
+                              target="_self"
+                              >Parents Guide</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="/us/play-pokemon/organize/"
+                          data-content-id=""
+                          data-content-type="Sidebar"
+                          data-content-variation="sidebarLeft"
+                          data-content-location=""
+                          data-content-category=""
+                          data-content-download=""
+                          target="_self"
+                          >Organize Events</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="/us/play-pokemon/leaderboards/"
+                      data-content-id=""
+                      data-content-type="Sidebar"
+                      data-content-variation="sidebarLeft"
+                      data-content-location=""
+                      data-content-category=""
+                      data-content-download=""
+                      target="_self"
+                      >Play! Pokémon Leaderboards</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="game last-item">
+                <a
+                  href="/us/pokemon-news/"
+                  target="_self"
+                  data-content-id=""
+                  data-content-type="Sidebar"
+                  data-content-variation="sidebarLeft"
+                  data-content-location=""
+                  data-content-category=""
+                  data-content-download=""
+                >
+                  <span class="fill"></span>
+
+                  <span class="icon icon_news"> </span>
+
+                  <span class="title title_news">News</span>
+                </a>
+              </li>
+
+              <li class="search">
+                <div class="search-wrapper">
+                  <form
+                    id="mobile-nav-site-search-widget"
+                    action="/search/"
+                    method="GET"
+                  >
+                    <input
+                      id="mobile-search"
+                      type="search"
+                      value=""
+                      placeholder="Search"
+                      name="q"
+                    />
+                    <span class="icon icon_search"></span>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="mosaic section" data-tile-template="MosaicDefault">
+      <script>
+        // For GTM Custom Dimension Tracking
+        // Can't be the first child element that's why it is inside the section
+        window.pokemonMosaicType = "MosaicDefault";
+      </script>
+
+      <div class="column-8 push-1" data-tile-position="Main">
+        <a
+          href="https://scarletviolet.pokemon.com/en-us/?utm_source=tilebouncer&amp;utm_medium=pcom&amp;utm_campaign=sv&amp;utm_term="
+          data-analytics-label="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-scarlet-violet/11082022/scarlet-violet-169-en.jpg"
+          data-content-id=""
+          data-content-type=""
+          data-content-variation=""
+          data-content-location=""
+          data-content-category=""
+          data-content-download=""
+        >
+          <div
+            class="content-block content-block-full content-hero content-rating animating"
+            style="
+              opacity: 1;
+              top: 0px;
+              left: 0px;
+              transform: matrix(1, 0, 0, 1, 0, 0);
+            "
+          >
+            <div class="content-hero-wrapper">
+              <div class="tile-image-wrapper">
+                <img
+                  src="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-scarlet-violet/11082022/scarlet-violet-169-en.jpg"
+                  class="breakpoint rating-image"
+                  data-maxwidth720px="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-scarlet-violet/11082022/scarlet-violet-169-en.jpg"
+                  data-minwidth721px="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-scarlet-violet/11082022/scarlet-violet-169-en.jpg"
+                  alt="Watch the New Pokémon Scarlet and Pokémon Violet Trailer"
+                />
+              </div>
+            </div>
+
+            <div class="banner banner-green">
+              <h3>
+                Watch the New <em>Pokémon Scarlet</em> and
+                <em>Pokémon Violet</em> Trailer
+              </h3>
+              <p style="max-width: 398px; min-height: 50px">
+                The latest update from the Paldea region includes information
+                about Tera Raid Battle events, Pokémon HOME compatibility, and
+                more.
+              </p>
+
+              <div
+                class="rating-logo wrapper"
+                data-href="https://www.esrb.org/"
+              >
+                <img
+                  class="ESRB"
+                  src="https://assets.pokemon.com/assets//cms2/img/video-games/rating-logos/e_mildfantasyviolence.jpg"
+                  alt="E"
+                />
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="/us/pokemon-news/support-your-local-game-store-and-receive-play-pokemon-prize-packs"
+          data-analytics-label="https://assets.pokemon.com/assets//cms2/img/attend-events/_tiles/2023/prize-packs/play-pokemon-prize-packs-169-en.jpg"
+          data-content-id=""
+          data-content-type=""
+          data-content-variation=""
+          data-content-location=""
+          data-content-category=""
+          data-content-download=""
+        >
+          <div
+            class="content-block content-block-half-first animating"
+            style="opacity: 1; top: 0px; left: 0px"
+          >
+            <div class="tile-image-wrapper">
+              <img
+                src="https://assets.pokemon.com/assets//cms2/img/attend-events/_tiles/2023/prize-packs/play-pokemon-prize-packs-169-en.jpg"
+                class="breakpoint rating-image"
+                data-maxwidth720px="https://assets.pokemon.com/assets//cms2/img/attend-events/_tiles/2023/prize-packs/play-pokemon-prize-packs-169-en.jpg"
+                data-minwidth721px="https://assets.pokemon.com/assets//cms2/img/attend-events/_tiles/2023/prize-packs/play-pokemon-prize-packs-169-en.jpg"
+                alt="Get Play! Pokémon Prize Packs"
+              />
+            </div>
+
+            <div class="banner banner-orange">
+              <h3>Get Play! Pokémon Prize Packs</h3>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="/us/pokemon-news/take-part-in-the-splatoon-3-splatoon-pokemon-collaboration-splatfest"
+          data-analytics-label="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/splatoon/splatoon-x-pokemon-collaboration-splatfest-169-en.jpg"
+          data-content-id=""
+          data-content-type=""
+          data-content-variation=""
+          data-content-location=""
+          data-content-category=""
+          data-content-download=""
+        >
+          <div
+            class="content-block content-block-half animating"
+            style="opacity: 1; top: 0px; left: 0px"
+          >
+            <div class="tile-image-wrapper">
+              <img
+                src="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/splatoon/splatoon-x-pokemon-collaboration-splatfest-169-en.jpg"
+                class="breakpoint rating-image"
+                data-maxwidth720px="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/splatoon/splatoon-x-pokemon-collaboration-splatfest-169-en.jpg"
+                data-minwidth721px="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/splatoon/splatoon-x-pokemon-collaboration-splatfest-169-en.jpg"
+                alt="A Splatoon × Pokémon Splatfest"
+              />
+            </div>
+
+            <div class="banner banner-gray">
+              <h3>A Splatoon × Pokémon Splatfest</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="column-4 push-9" data-tile-position="Right_">
+        <a
+          href="/us/strategy/get-the-pokemon-tcg-sword-shield-silver-tempest-build-battle-box"
+          data-analytics-label="https://assets.pokemon.com/assets//cms2/img/trading-card-game/_tiles/swsh12/prerelease/swsh12-build-battle-box-34-en.jpg"
+          data-content-id=""
+          data-content-type=""
+          data-content-variation=""
+          data-content-location=""
+          data-content-category=""
+          data-content-download=""
+        >
+          <div
+            class="content-block content-block-full animating"
+            style="
+              opacity: 1;
+              top: 0px;
+              left: 0px;
+              transform: matrix(1, 0, 0, 1, 0, 0);
+            "
+          >
+            <div class="banner banner-right banner-yellow">
+              <div class="tile-image-wrapper">
+                <img
+                  src="https://assets.pokemon.com/assets//cms2/img/trading-card-game/_tiles/swsh12/prerelease/swsh12-build-battle-box-34-en.jpg"
+                  alt="Sword &amp; Shield—Silver Tempest Prerelease"
+                />
+              </div>
+
+              <div class="banner-wrapper">
+                <h3><em>Silver Tempest</em> Prerelease</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="/us/pokemon-news/another-peek-at-new-cards-from-pokemon-tcg-sword-shield-silver-tempest/"
+          data-analytics-label="https://assets.pokemon.com/assets//cms2/img/trading-card-game/_tiles/swsh12/preview-cards/swsh12-preview-cards-2-169-en.jpg"
+          data-content-id=""
+          data-content-type=""
+          data-content-variation=""
+          data-content-location=""
+          data-content-category=""
+          data-content-download=""
+        >
+          <div
+            class="content-block content-block-full animating"
+            style="opacity: 1; top: 0px; left: 0px"
+          >
+            <div class="tile-image-wrapper">
+              <img
+                src="https://assets.pokemon.com/assets//cms2/img/trading-card-game/_tiles/swsh12/preview-cards/swsh12-preview-cards-2-169-en.jpg"
+                class="breakpoint rating-image"
+                data-maxwidth720px="https://assets.pokemon.com/assets//cms2/img/trading-card-game/_tiles/swsh12/preview-cards/swsh12-preview-cards-2-169-en.jpg"
+                data-minwidth721px="https://assets.pokemon.com/assets//cms2/img/trading-card-game/_tiles/swsh12/preview-cards/swsh12-preview-cards-2-169-en.jpg"
+                alt="More New Sword &amp; Shield— Silver Tempest Cards"
+              />
+            </div>
+
+            <div class="banner banner-lightblue">
+              <h3>
+                More New <em>Sword &amp; Shield— Silver Tempest</em> Cards
+              </h3>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="/us/pokemon-news/teddiursa-shines-ursaluna-debuts-in-pokemon-go-november-2022-community-day/"
+          data-analytics-label="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-go/11022022/pokemon-go-169.jpg"
+          data-content-id=""
+          data-content-type=""
+          data-content-variation=""
+          data-content-location=""
+          data-content-category=""
+          data-content-download=""
+        >
+          <div
+            class="content-block content-block-full animating"
+            style="opacity: 1; top: 0px; left: 0px"
+          >
+            <div class="tile-image-wrapper">
+              <img
+                src="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-go/11022022/pokemon-go-169.jpg"
+                class="breakpoint rating-image"
+                data-maxwidth720px="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-go/11022022/pokemon-go-169.jpg"
+                data-minwidth721px="https://assets.pokemon.com/assets//cms2/img/video-games/_tiles/pokemon-go/11022022/pokemon-go-169.jpg"
+                alt="Teddiursa and Ursaluna Share the Lunar Love in Pokémon GO"
+              />
+            </div>
+
+            <div class="banner banner-blue">
+              <h3>
+                Teddiursa and Ursaluna Share the Lunar Love in Pokémon&nbsp;GO
+              </h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
